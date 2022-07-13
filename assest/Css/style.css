@@ -1,0 +1,313 @@
+.main_dv{
+    overflow:hidden;
+    position:absolute;
+    top:10%;
+    left:10%;
+    width: 80%;
+    height: 80%;
+    background-color:rgb(255, 255, 255);
+    border-style: solid;
+    border-radius: 10%;
+    border-color: rgb(255, 255, 255);
+    box-shadow: 10px 10px 101px 10px;
+}
+.main_dv h1{
+    color: rgb(25, 27, 23);
+    font-style : italic;
+}
+/* btn style classe's*/
+.btn{
+    width:100px;
+    height:50px;
+    margin: 10px;
+    transition: .5s;
+}
+.standr{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+}
+.change{
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    border-style:none;
+    border-radius:15%;
+}
+.selected{
+    background-color:rgb(255, 0, 0);
+}
+.change:hover{
+    background-color:rgb(182, 176, 176);
+    color: rgb(0, 0, 0);
+}
+.header{
+    position: absolute;
+    top:10px;
+    left:60%;
+}
+.forme {
+    width: 250px !important;
+    color: rgb(233, 133, 216) !important;
+    position: absolute;
+    top: 200px;
+    right:100px;
+    font-size: 15px !important;
+}
+.flow_container{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 30%;
+    top:20%;
+
+    transition: 3s;
+    animation-name: flow_motion;
+    animation-duration: 15s;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+
+    /* border-style: solid;
+    border-width: 5px;
+    border-radius: 50%;
+    border-color: rgba(255, 102, 0, 0.456); */
+
+}
+.flow1{
+    align-items: center;
+    font-style: italic;
+    margin:5px;
+    width: auto;
+    height: auto;
+    /* background-color: rgb(255, 0, 157); */
+    color: white;
+    border-radius: 50%;
+    display:inline-flex;
+    position: absolute;
+    top: 1%;
+    left: 45%;
+
+    
+    animation-name: flow_init;
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+    animation-delay: 5s;
+
+
+}
+.flow4{
+    align-items: center;
+    font-style: italic;
+    margin:5px;
+    width: auto;
+    height: auto;
+    /* background-color: rgb(255, 0, 0); */
+    color: white;
+    border-radius: 50%;
+    display:inline-flex;
+    position: absolute;
+    bottom: 1%;
+    left: 45%;
+
+    
+    animation-name: flow_init;
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+    animation-delay: 5s;
+}
+.flow2{
+    align-items: center;
+    font-style: italic;
+    margin:5px;
+    width: auto;
+    height: auto;
+    /* background-color: rgb(0, 255, 42); */
+    color: white;
+    border-radius: 50%;
+    display:inline-flex;
+    position: absolute;
+    top: 35%;
+    left: 0%;
+
+    
+    animation-name: flow_init;
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+    animation-delay: 5s;
+}
+.flow3{
+    align-items: center;
+    font-style: italic;
+    margin:5px;
+    width: auto;
+    height: auto;
+    /* background-color: rgb(93, 0, 253); */
+    color: white;
+    border-radius: 50%;
+    display:inline-flex;
+    position: absolute;
+    top: 35%;
+    right: 0%;
+
+    animation-name: flow_init ;
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+    animation-delay: 5s;
+}
+
+@keyframes flow_motion {
+to{
+    transition: 2s;
+    transform:rotate(360deg);
+
+}
+
+}
+@keyframes flow_init {
+    to{
+    transition: 3s;
+    transform:rotate(-360deg)
+    }
+    
+}
+
+/*////////////////// 2nd classes //////////////////////////// */
+
+.nd_flow_container{
+    margin-top:25%;
+    margin-left:20%;
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    left: 15%;
+    overflow: hidden;
+
+    transition: 1s;
+    animation-name: maingrap2 ;
+    animation-duration: 3s;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+}
+.ndflow1{
+    align-items: center;
+    font-style: italic;
+    margin:5px;
+    width: 100px;
+    height: 50pxs;
+    background-color: rgb(255, 0, 157);
+    color: white;
+    border-radius: 50% 0% 0% 30%;
+    display:inline-flex;
+
+    animation-name: grap2;
+    animation-duration: 3s;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+    animation-delay: 1s;
+}
+.ndflow2{
+    align-items: center;
+    font-style: italic;
+    margin:5px;
+    width: 100px;
+    height: 50pxs;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    border-radius: 0%;
+    display:inline-flex;
+
+    animation-name: grap2;
+    animation-duration: 3s;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+    animation-delay: 2s;
+}
+.ndflow3{
+    align-items: center;
+    font-style: italic;
+    margin:5px;
+    width: 100px;
+    height: 50pxs;
+    background-color: rgb(0, 255, 42);
+    color: white;
+    border-radius: 0%;
+    display:inline-flex;
+
+    animation-name: grap2;
+    animation-duration: 3s;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+    animation-delay: 3s;
+}
+.ndflow4{
+    align-items: center;
+    font-style: italic;
+    margin:5px;
+    width: 100px;
+    height: 50pxs;
+    background-color: rgb(117, 61, 214);
+    color: white;
+    border-radius: 0% 50% 30% 0%;
+    display:inline-flex;
+
+    animation-name: grap2;
+    animation-duration: 3s;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+    animation-delay: 4s;
+}
+
+
+@keyframes grap2 {
+    to{
+        transition: .5s;
+        transform: translateX(25px);
+        border-radius: 50% 0% 0% 0%;
+
+    
+    }
+}
+
+@keyframes maingrap2 {
+    to{
+    }
+}
+
+
+
+/* //////////////////////// small media screen ///////////*/
+@media all and (max-width:1024px) {
+    .main_dv{
+        background-color: rgb(251, 134, 8);
+    }
+    .header{
+        position: absolute;
+        top:10px;
+        left:1%;
+    }
+    .forme {
+        width: 250px !important;
+        color: rgb(233, 133, 216) !important;
+        position: absolute;
+        top: 250px;
+        right:0px;
+        font-size: 15px !important;
+    }
+    .header h1{
+        font-size: 22px;
+    }
+    .flow_container{
+        position: absolute;
+        top: 15%;
+        left: 35%;
+    }
+    .nd_flow_container{
+        position: absolute;
+        top: 20%;
+        left: -18%;
+    }
+}
